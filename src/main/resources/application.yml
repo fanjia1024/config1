@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fanjia1024/config-repo.git
+          username: fanjia1024
+          password: fanjia521
+#          basedir: /Users/admin/code/myProjects/java/imooc/SpringCloud_Sell/config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://47.98.63.100:8761/eureka/
+      #,http://eureka2:8762/eureka/
+management:
+  endpoints:
+    web:
+      expose: "*"
+server:
+  port: 8088
